@@ -1,0 +1,85 @@
+.header {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header-menu-list{
+  display:flex;
+  column-gap: 50px;
+}
+
+.header-menu-link{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  column-gap: 7px;
+  color: var(--color-light);
+}
+
+.header-menu-link:hover{
+color: var(--color-light-gray);
+}
+
+.button{
+  display: inline-flex;
+  height: 38px;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding-inline: 26px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background-color: var(--color-light);
+  border: none;
+  white-space: nowrap;
+}
+
+.button:hover{
+  cursor: default;
+  background-color: var(--color-light-gray);
+}
+
+.header-menu-link.is-current::after{
+  content:"";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.header-actions{
+  display:flex;
+  column-gap: 40px;
+}
+
+.header-logo{
+  flex-shrink: 0;
+}
+
+.header-burger-button{
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  row-gap: 4px;
+  padding-left: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: var(--border);
+}
+
+.header-burger-button-line{
+  height: 1px;
+  width: 6px;
+  background-color: var(--color-light);
+  box-shadow: 16px 0 0 var(--color-light);
+}
