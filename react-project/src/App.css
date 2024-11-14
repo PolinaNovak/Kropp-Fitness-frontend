@@ -260,6 +260,13 @@ a, button, input, textarea, svg * {
   transition-duration: var(--transition-duration);
 }
 
+@media (max-width: 900px){
+  .header{
+    flex-wrap: wrap;
+  }
+
+}
+
 
  
 
