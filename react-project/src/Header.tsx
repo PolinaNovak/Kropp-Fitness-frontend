@@ -33,7 +33,8 @@ function Header(){
         <div>
             <div className="header-actions">
                 <button className="header-book-button button" type="button">Book now</button>
-                <button className="header-burger-button button" type="button">
+                <button className="header-burger-button button" type="button" title="Open menu">
+                    <span className="visually-hidden">Open menu</span>
                     <span className="header-burger-button-line"></span>
                     <span className="header-burger-button-line"></span>
                     <span className="header-burger-button-line"></span>

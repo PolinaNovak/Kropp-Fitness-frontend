@@ -1,11 +1,12 @@
 .header {
   padding-inline: 32px;
-  background-color: #000000;
+  background-color: var(--color-dark-alternate);
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
   padding-top: 20px;
+  min-height: var(--header-height);
 }
 
 .header-menu-list{
@@ -19,7 +20,7 @@
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  height: 50px;
+  height: var(--header-height);;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -44,6 +45,7 @@ color: var(--color-light-gray);
   background-color: var(--color-light);
   border: none;
   white-space: nowrap;
+  padding-top: 12px;
 }
 
 .button:hover{
@@ -54,9 +56,11 @@ color: var(--color-light-gray);
 .header-menu-link.is-current::after{
   content:"";
   width: 5px;
-  height: 5px;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: currentColor;
+  position: relative;
+  bottom: 1px;
 }
 
 .header-actions{
@@ -70,15 +74,15 @@ color: var(--color-light-gray);
 
 .header-burger-button{
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   justify-content: center;
   row-gap: 4px;
   padding-left: 8px;
   width: 40px;
-  height: 40px;
+  aspect-ratio: 1;
   color: var(--color-light);
   background-color: transparent;
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   border: var(--border);
 }
 
@@ -98,7 +102,6 @@ color: var(--color-light-gray);
 @media (max-width: 900px){
   .header{
     row-gap: 10px;
-    padding-inline: 15px;
   }
 
   .header-menu{
@@ -151,7 +154,11 @@ color: var(--color-light-gray);
   }
 
   .button{
-    padding-inline: 11;
+    padding-inline:  16px;
+  }
+
+  .header-burger-button{
+    padding-left: 0px;
   }
 
 }
