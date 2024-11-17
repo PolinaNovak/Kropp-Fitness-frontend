@@ -9,7 +9,8 @@ function Motivation(){
                     <li className="motivationItem">
                         <div className="motivationCard container">
                             <div className="motivationCardBody">
-                                <h3 className="motivationCardTitle backdropTitle"
+                                <h3 className="motivationCardTitle backdropTitle 
+                                titleMedium"
                                 data-title="Strong">
                                 Be you, just stronger! <br/>
                                 Power is in you
@@ -38,7 +39,8 @@ function Motivation(){
                     <li className="motivationItem">
                         <div className="motivationCard container">
                             <div className="motivationCardBody">
-                                <h3 className="motivationCardTitle backdropTitle"
+                                <h3 className="motivationCardTitle backdropTitle 
+                                titleMedium"
                                 data-title="Start">
                                 Today is the best <br/>
                                 day to start!

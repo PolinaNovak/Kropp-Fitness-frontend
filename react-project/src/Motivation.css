@@ -1,0 +1,27 @@
+.motivationItem:nth-child(even){
+    background-color: var(--color-dark-alternate);
+}
+
+.motivationCard{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+}
+
+.motivationItem:nth-child(even) .motivationCard{
+    flex-direction: row-reverse;
+}
+
+.motivationCardImage{
+    margin-block: -60px;
+}
+
+.motivationCard{
+    padding-left: 35px;
+}
+
+.backdropTitle{
+    position: relative;
+    z-index: 2;
+}
