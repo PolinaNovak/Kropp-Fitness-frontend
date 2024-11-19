@@ -16,15 +16,16 @@ function Location(){
                     titleMedium backdropTitle centered" 
                     data-title="Look">
                         Find us near you</h2>
+
+                    <div className="locationDescription">
+                        <p>Nec suas signiferumque id. An eum labore commodo 
+                            principes. Usu diam noluisse cu, nam adipisci
+                        </p>
+                    </div>
+                    <a className="locationButton transparent button">
+                        View more
+                    </a>
                 </div>
-                <div className="locationDescription">
-                    <p>Nec suas signiferumque id. An eum labore commodo 
-                        principes. Usu diam noluisse cu, nam adipisci
-                    </p>
-                </div>
-                <a className="locationButton transparent button">
-                    View more
-                </a>
             </section>
         </div>
     )

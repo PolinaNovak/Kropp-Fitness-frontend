@@ -5,6 +5,7 @@ import Motivation from './Motivation'
 import TrainingTypes from './TrainingTypes'
 import JoinUs from './JoinUs'
 import Location from './Location'
+import Family from './Family'
 
 function App(){
   return <div>
@@ -15,6 +16,7 @@ function App(){
       <TrainingTypes/>
       <JoinUs/>
       <Location/>
+      <Family/>
     </main>
     </div>
 }

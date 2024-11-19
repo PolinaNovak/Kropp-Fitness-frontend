@@ -261,6 +261,39 @@ line-height: 28px;
   z-index: 2;
 }
 
+.backdropTitle::before{
+  content:"";
+  display: block;
+  width: 26px;
+  aspect-ratio: 1;
+  /* height: 41px; */
+  background: url(./motivation/plus.svg) center/contain no-repeat;
+  position: absolute;
+  top: calc(0% - 8px);
+  right: 100%;
+}
+
+.backdropTitle::after{
+  content: attr(data-title);
+  font-size: 2.8em;
+  font-family: var(--font-family-accent);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-light-gray);
+  text-stroke: 1px var(--color-light-gray);
+  opacity: 30%;
+  position: absolute;
+  z-index: -1;
+  top: -0.45em;
+  left: -0.6em;
+  line-height: 1;
+}
+
+.backdropTitle.centered::after{
+  left: 50%;
+  top: -0.35em;
+  translate: -50% 0;
+}
+
 .input{
   height: var(--input-height);
   padding-inline: 25px;

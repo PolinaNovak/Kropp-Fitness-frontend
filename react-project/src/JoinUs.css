@@ -90,12 +90,6 @@
     row-gap: 7px;
 }
 
-.backdropTitle.centered::after{
-    left: 50%;
-    top: -0.05em;
-    translate: -50% 0;
-}
-
 .joinUsFormSubtitle{
     font-size: 20px;
     line-height: 1.65;
