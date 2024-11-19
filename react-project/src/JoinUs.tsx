@@ -26,7 +26,8 @@ function JoinUs(){
                             data-title="Go!">
                                 Start here
                             </h3>
-                            <div className="joinUsFormSubtitle">
+                            <div className="joinUsFormSubtitle 
+                            sectionDescription">
                                 Fill the form below to start your journey
                             </div>
                         </header>

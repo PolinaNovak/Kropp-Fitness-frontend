@@ -294,6 +294,14 @@ line-height: 28px;
   translate: -50% 0;
 }
 
+.sectionDescription{
+  font-size: 20px;
+  line-height: 1.65;
+  text-transform: uppercase;
+  color: var(--color-light);
+  text-align: center;
+}
+
 .input{
   height: var(--input-height);
   padding-inline: 25px;

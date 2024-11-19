@@ -90,13 +90,6 @@
     row-gap: 7px;
 }
 
-.joinUsFormSubtitle{
-    font-size: 20px;
-    line-height: 1.65;
-    text-transform: uppercase;
-    color: var(--color-light);
-    text-align: center;
-}
 
 
 .joinUsFormHeader:not(:last-child){
