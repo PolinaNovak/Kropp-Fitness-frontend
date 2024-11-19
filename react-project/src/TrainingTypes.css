@@ -1,0 +1,56 @@
+.trainingTypes{
+    padding-block: 70px 120px;
+    position: relative;
+    background-color: var(--color-dark);
+}
+
+.trainingTypesList{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+}
+
+
+.trainingTypesItem{
+    --trainingTypesItemBgIconSoze: 80px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    padding-top: var(--trainingTypesItemBgIconSoze);
+    background: url("./trainingTypes/arrow.svg") 100% 
+    0/var(--trainingTypesItemBgIconSoze) no-repeat;
+}
+
+.trainingTypesItem img{
+    height: 140px;
+}
+
+.trainingTypesItemTitle{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media (max-width: 1280px){
+    .trainingTypesList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px){
+    .trainingTypesList{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .trainingTypesItem{
+        --trainingTypesItemBgIconSoze: 50px;
+        row-gap: 10px;
+    }
+
+    .trainingTypesItem img{
+        max-height: 120px;
+    }
+  }
+  

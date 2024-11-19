@@ -7,6 +7,7 @@
     justify-content: start;
     align-items: center;
     column-gap: clamp(30px, 10.42vw, 200px);
+    padding-left: 35px;
 }
 
 .motivationItem:nth-child(even) .motivationCard{
@@ -17,11 +18,130 @@
     margin-block: -60px;
 }
 
-.motivationCard{
-    padding-left: 35px;
+.backdropTitle::before{
+    content:"";
+    display: block;
+    width: 26px;
+    height: 41px;
+    background: url(./motivation/plus.svg) center/contain no-repeat;
+    position: absolute;
+    right: calc(100% + 8px)
 }
 
-.backdropTitle{
-    position: relative;
-    z-index: 2;
+.backdropTitle::after{
+    content: attr(data-title);
+    color: red;
+    font-size: 2.8em;
+    font-family: var(--font-family-accent);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-light-gray);
+    text-stroke: 1px var(--color-light-gray);
+    opacity: 30%;
+    position: absolute;
+    z-index: -1;
+    top: -0.45em;
+    left: -0.6em;
 }
+
+.motivationCardDescription{
+    max-width: 400px;
+    height: 52px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--color-light-gray);
+    letter-spacing: 0.8px;
+}
+
+p:not([class]):not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.motivationCardTitle:not(:last-child){
+    margin-bottom: 14px;
+}
+
+.motivationCardDescription:not(:last-child){
+    margin-bottom: 37px;
+}
+
+.button{
+    display: inline-flex;
+    height: 38px;
+    align-items: center;
+    border-radius: var(--border-radius);
+    padding-inline: 26px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background-color: var(--color-light);
+    border: none;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--color-light);
+    padding-top: 2.5px;
+  }
+
+  .button.transparent{
+    height: var(--input-height);
+    padding-left: 31px;
+    padding-right: 80px;
+    background-color: transparent;
+    border: var(--border);
+    position: relative;
+  }
+
+  .button.transparent::after{
+    content: '';
+    height: 100%;
+    aspect-ratio: 1;
+    background: url("./motivation/arrow.svg") center/70% no-repeat;
+    border: var(--border);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .button.transparent:hover{
+    color: var(--color-dark);
+    background-color: var(--color-light-gray);
+  }
+
+  @media (max-width: 1919px){
+    .motivationCardImage{
+        margin-block: -20px;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .motivationCardImage{
+        max-width: 30%;
+        height: auto;
+        margin-block: 0;
+    }
+    
+    .motivationCard{
+        padding-block: 50px;
+    }
+  }
+
+  @media (max-width: 767px){
+    .motivationCard{
+        row-gap: 30px;
+        padding-block: 30px;
+    }
+
+    .motivationCard, .motivationItem:nth-child(even) .motivationCard{
+        flex-direction: column-reverse;
+    }
+
+    .motivationCardImage{
+        max-width: 60%;
+    }
+
+    .motivationCardDescription{
+        margin-bottom: 20px;
+    }
+}
+  
