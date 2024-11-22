@@ -41,9 +41,9 @@ function JoinUs(){
                             </input>
 
                             <label className="visually-hidden" 
-                            htmlFor="username">Email</label>
+                            htmlFor="useremail">Email</label>
                             <input className="joinUsFormInput input"
-                            id="username"
+                            id="useremail"
                             placeholder="Email"
                             type="email">
                             </input>

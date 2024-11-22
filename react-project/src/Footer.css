@@ -1,0 +1,151 @@
+.footer {
+  --footerLogoWidth: 20.77%;
+}
+
+.footerMain {
+  padding-block: 141px 157px;
+}
+
+.footerLogo {
+  max-height: 50px;
+}
+
+.footerLogoImage {
+  height: auto;
+}
+
+.footerExtra {
+  padding-block: 13px 11px;
+  background-color: var(--color-dark-alternate);
+}
+
+.footerHeader,
+.footerBody {
+  display: grid;
+}
+
+.footerHeader {
+  grid-template-columns: var(--footerLogoWidth) auto;
+  column-gap: 62px;
+}
+
+.footerHeader:not(:last-child) {
+  margin-bottom: 59px;
+}
+
+.footerBody {
+  grid-template-columns: var(--footerLogoWidth) repeat(3, 1fr);
+  column-gap: 59px;
+}
+
+.footerDescription {
+  text-align: start;
+}
+
+.footerColumnTitle {
+  font-size: clamp(18px, 1.15vw, 22px);
+}
+
+.footerColumnTitle:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footerSchedule:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.footerAddress:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.footerAddress,
+.footerSchedule {
+  color: var(--color-light);
+}
+
+.footerColumnTitle.hasArrow::after {
+  content: "";
+  width: 0.74em;
+  aspect-ratio: 1;
+  display: inline-block;
+  background: url("./icons/arrow-icon.svg") center/contain no-repeat;
+  scale: -1 1;
+  margin-left: 0.5em;
+}
+
+.footerSubscribe {
+  position: relative;
+}
+
+.footerSubscribe:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.footerSubscribeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url(./motivation/arrow.svg) center / 70% no-repeat;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.footerSubscribeButton:hover {
+  background-color: var(--color-light-gray);
+}
+
+.footerSubscribeInput {
+  padding-right: 70px;
+}
+
+.footerSoc1alsList {
+  display: flex;
+  column-gap: 18px;
+}
+
+.footerSoc1alsLink {
+  display: flex;
+  width: 23px;
+}
+
+.footerCopyright {
+  color: var(--color-light);
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .footerMain {
+    padding-block: 80px 50px;
+  }
+
+  .footerBody {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .footerHeader {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerBody {
+    grid-template-columns: 1fr;
+  }
+
+  .footerMain {
+    padding-top: 50px;
+  }
+
+  .footerHeader:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footerSubscribe:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

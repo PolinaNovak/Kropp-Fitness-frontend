@@ -38,13 +38,13 @@
         display: flex;
         flex-direction: column-reverse;
     }
-}
 
-@media (max-width: 767px){
     .locationBody{
         padding-block: 40px;
     }
+}
 
+@media (max-width: 767px){
     .locationDescription{
         margin-bottom: 20px;
     }
